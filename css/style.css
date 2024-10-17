@@ -1,0 +1,648 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    display:flex;
+    width:100%;
+    height:55px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+.nav-bar{
+    position: relative;
+}
+.nav-links{
+    display: flex;
+    position: relative;
+}
+.nav-link,.nav-link1,.nav-link2,.nav-link3,.nav-link4,.nav-link5,.drop-down li{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+}
+.nav-link,.nav-link1,.nav-link2,.nav-link3,.nav-link4,.nav-link5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.drop-down{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.726);
+    display:none;
+}
+.nav-links .nav-link:hover .drop-down{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.img1{
+    margin-left:160px;
+}
+.li1{
+    margin: 20px;
+}
+.icons{
+    float:left;
+    padding:10px;
+}
+.i1{
+    font-size:30px;
+    color: white;
+    margin-left:10px;
+}
+.btn1{
+    height:20px;
+    border: 1px,solid,white;
+    border-radius:50%;
+}
+.p1{
+    display: inline-block;
+    color:white;
+    font-size: 20px;
+}
+.div2:hover{
+    transform: scale(2.1,1);
+    transition:0.5s;
+}
+.nav-links .nav-link::after{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:60px;
+    height:2px;
+    border:2px,solid,white;
+    margin-top:13px;
+    margin-left:12px;
+    padding:5px;
+    border-left:transparent;
+    border-right: transparent;
+    transform: scaleX(0);
+    transition:1s;
+}
+.nav-links .nav-link:hover::after{
+    transform: scaleX(1);
+}
+.nav-link::before{
+    position: absolute;
+    content:"";
+    top:0;
+    bottom:0;
+    margin-top:13px;
+    margin-right:20px;
+    width:70px;
+    height:15px;
+    border:2px,solid,white;
+    border-top:transparent;
+    border-bottom:transparent;
+    transform: scaleY(0);
+    transition:1s;
+}
+.nav-link:hover::before{
+    transform: scaleY(1);
+}
+.nav-links .nav-link1::after{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:60px;
+    height:2px;
+    border:2px,solid,white;
+    margin-top:13px;
+    margin-left:102px;
+    padding:5px;
+    border-left:transparent;
+    border-right: transparent;
+    transform: scaleX(0);
+    transition:1s;
+}
+.nav-links .nav-link1:hover::after{
+    transform: scaleX(1);
+}
+.nav-link1::before{
+    position: absolute;
+    content:"";
+    top:0;
+    bottom:0;
+    margin-top:13px;
+    margin-right:20px;
+    width:69px;
+    height:15px;
+    border:2px,solid,white;
+    border-top:transparent;
+    border-bottom:transparent;
+    transform: scaleY(0);
+    transition:1s;
+}
+.nav-link1:hover::before{
+    transform: scaleY(1);
+}
+.nav-links .nav-link2::after{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:75px;
+    height:4px;
+    border:2px,solid,white;
+    margin-top:13px;
+    margin-left:190px;
+    padding:5px;   
+    border-left:transparent;
+    border-right: transparent;
+    transform: scaleX(0);
+    transition:1s;
+}
+.nav-links .nav-link2:hover::after{
+    transform: scaleX(1);
+}
+.nav-link2::before{
+    position: absolute;
+    content:"";
+    top:0;
+    bottom:0;
+    margin-top:13px;
+    margin-right:20px;
+    width:82px;
+    height:17px;
+    border:2px,solid,white;
+    border-top:transparent;
+    border-bottom:transparent;
+    transform: scaleY(0);
+    transition:1s;
+}
+.nav-link2:hover::before{
+    transform: scaleY(1);
+}
+.nav-links .nav-link3::after{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:81px;
+    height:4px;
+    border:2px,solid,white;
+    margin-top:12px;
+    margin-left:297px;
+    padding:5px;
+    border-left:transparent;
+    border-right: transparent;
+    transform: scaleX(0);
+    transition:1s;
+}
+.nav-links .nav-link3:hover::after{
+    transform: scaleX(1);
+}
+.nav-link3::before{
+    position: absolute;
+    content:"";
+    top:0;
+    bottom:0;
+    margin-top:13px;
+    margin-right:20px;
+    width:90px;
+    height:16px;
+    border:2px,solid,white;
+    border-top:transparent;
+    border-bottom:transparent;
+    transform: scaleY(0);
+    transition:1s;
+}
+.nav-link3:hover::before{
+    transform: scaleY(1);
+}
+.nav-links .nav-link4::after{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:77px;
+    height:4px;
+    border:2px,solid,white;
+    margin-top:13px;
+    margin-left:408px;
+    padding:5px;
+    border-left:transparent;
+    border-right: transparent;
+    transform: scaleX(0);
+    transition:1s;
+}
+.nav-links .nav-link4:hover::after{
+    transform: scaleX(1);
+}
+.nav-link4::before{
+    position: absolute;
+    content:"";
+    top:0;
+    bottom:0;
+    margin-top:13px;
+    margin-right:40px;
+    width:84px;
+    height:17px;
+    border:2px,solid,white;
+    border-top:transparent;
+    border-bottom:transparent;
+    transform: scaleY(0);
+    transition:1s;
+}
+.nav-link4:hover::before{
+    transform: scaleY(1);
+}
+.nav-links .nav-link5::after{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    width:25px;
+    height:2px;
+    border:2px,solid,white;
+    margin-top:13px;
+    margin-left:515px;
+    padding:7px;
+    border-left:transparent;
+    border-right: transparent;
+    transform: scaleX(0);
+    transition:1s;
+}
+.nav-links .nav-link5:hover::after{
+    transform: scaleX(1);
+}
+.nav-link5::before{
+    position: absolute;
+    content:"";
+    top:0;
+    bottom:0;
+    margin-top:13px;
+    margin-right:10px;
+    width:40px;
+    height:19px;
+    border:2px,solid,white;
+    border-top:transparent;
+    border-bottom:transparent;
+    transform: scaleY(0);
+    transition:1s;
+    box-sizing: border-box;
+    padding:7px;
+}
+.nav-link5:hover::before{
+    transform: scaleY(1);
+}
+.rocker-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.special-div1,.special-div2,.special-div3,.special-div4{
+    width:350px;
+    height:500px;
+}
+.p2{
+    color:rgb(154, 152, 152);
+    font-size:20px;
+}
+.title1{
+    display: inline-block;
+}
+.btn2{
+    width:30px;
+    height:30px;
+    background-color: #bf0603;
+    border:1px,solid,transparent;
+    color:white;
+    margin-left:40px;
+    font-size:30px;
+    visibility: hidden;
+}
+.special-div1:hover .btn2{
+    visibility: visible;
+}
+.special-div2:hover .btn2{
+    visibility: visible;
+}
+.special-div3:hover .btn2{
+    visibility: visible;
+}
+.special-div4:hover .btn2{
+    visibility: visible;
+}
+.rocker-container1{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+.special-div5{
+    width:600px;
+    height:300px;
+    background-color:#e6ccb2;
+    box-sizing: border-box;
+    padding:15px;
+}
+.special-div6{
+    width:350px;
+    height:300px;
+    background-color: aqua;
+}
+.special-div7{
+    width:350px;
+    height:300px;
+    background-color: rebeccapurple;
+}
+.i2{
+    color:#60463b;
+    font-size:90px;
+}
+.p3{
+    font-size:30px;
+    font-weight: bold;
+    display: inline-block;
+}
+.sp1{
+    font-weight: lighter;
+    font-size: smaller;
+}
+.sp2{
+    display: block;
+    font-size:20px;
+}
+.div3,.div4,.div5{
+    width:50px;
+    height:1px;
+    background-color: #60463b;
+}
+.div3{
+    margin-left:500px;
+}
+.div4{
+    margin-left:420px;
+}
+.div5{
+    margin-left:320px;
+}
+.special-div6{
+    background-image: url(../images/regent-tufted-performance-velvet-dining-side-chairs-set-of-2-in-white_5f08ba2733c6b.jpeg);
+    background-position:center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding:10px;
+    
+}
+.special-div6:hover{
+    transform: scale(1.1,1.1);
+}
+.p4{
+    font-size:30px;
+}
+.special-div7{
+    background-image: url(../images/cff7c61b-74d6-4fbd-ae5e-32d6d573aa06_1.22e948c0685809e2cb752ae8d86dbe75.webp);
+    background-position:center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.special-div7:hover{
+    transform:scale(1.1,1.1);
+}
+.container{
+    width:80%;
+    margin: auto;
+}
+
+.div1{
+    width:1200px;
+    height:550px;
+    margin:100px auto;
+    background-image: url(../images/main-banner-1-1600x700.jpg);
+    background-size:cover;
+    background-position:center;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+.div2{
+    width:85px;
+    height:3.5px;
+    background-color:#b08968;
+    margin:auto;
+}
+.special-icons{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.special-icon1,.special-icon2,.special-icon3,.special-icon4,.special-icon5{
+    width:250px;
+    height:200px;
+    box-sizing: border-box;
+    padding:30px;
+    text-align: center;
+}
+.icon-p1{
+    color:rgb(167, 167, 167);
+}
+.h3{
+    width:1px;
+    height:200px;
+    border-color: black;
+}
+.i2{
+    font-size:80px;
+    color:#60463b;
+}
+.special-i3{
+    position: relative;
+    text-align: center;
+}
+.i3,.i4{
+    font-size:50px;
+    color:rgba(0, 0, 0, 0.726);
+    position: absolute;
+    transition: transform 0.6s,opacity 0.6s ease-in-out;
+}
+.i4{
+    opacity:0;
+    transform: translateY(40px);
+}
+.special-i3:hover .i3{
+    transform: translateY(-20px);
+    opacity:0;
+}
+.special-i3:hover .i4{
+    transform: translateY(0);
+    opacity:1;
+}
+.special-icon1{
+    text-align: center;
+}
+.special-i3{
+    position: relative;
+    text-align: center;
+}
+.div-info{
+    margin-top:20px;
+    text-align: center;
+}
+.div-info1,.div-info2{
+    margin-top:40px;
+}
+.hr2{
+    margin:0 100px;
+    width:1350px;
+    height:1px;
+    border-color: black;
+}
+.p5{
+    font-size: 50px;
+    text-align: center;
+}
+.div6{
+    width:150px;
+    height:3.5px;
+    background-color: #b08968;
+    margin: auto;
+}
+.div6:hover{
+    transform: scale(2,1);
+}
+.ul1 li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left:30px;
+    font-size: 25px;
+}
+.ul1{
+    text-align: center;
+}
+.body{
+    perspective: 900px;
+}
+.div-container{
+    width:80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3,20%);
+    grid-column-gap:15%;
+}
+.div-parent{
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+    width:340px;
+    height:404px;
+    background-color: #f1f1f1;
+    border-radius:7px;
+    transform-style: preserve-3d;
+}
+.div-img{
+    position: absolute;
+    width:300px;
+    height:300px;
+    background-image: url(../images/hon-matter-guest-chair-leg-base-front-view.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index:1;
+}
+.div-overlay{
+    position: absolute;
+    width:300px;
+    height:300px;
+    background-image: url(../images/hon-matter-guest-chair-leg-base-back-view.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index:2;
+    display: none;
+}
+.div-img:hover + .div-overlay{
+    display: block;
+}
+.div-content{
+    text-align: center;
+    margin-top:303px;
+    width:300px;
+    height:100px;
+}
+.i5{
+    font-size:20px;
+    color:#fca311;
+}
+.i6{
+    font-size: 20px;
+}
+.i8{
+    font-size: 30px;
+    display: inline-block;
+    transform: translate(80px,60px);
+    color: white;
+}
+.div-img1{
+    position: absolute;
+    width:300px;
+    height:300px;
+    background-image: url(../images/16941803_1.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index:1;
+}
+.div-overlay1{
+    position: absolute;
+    width:300px;
+    height:300px;
+    background-image: url(../images/DCB8104.webp);
+    background-position: center;
+    background-size: cover;
+    z-index:2;
+    display: none;
+}
+.div-img1:hover + .div-overlay1{
+    display: block;
+}
+.i9{
+    font-size: 30px;
+    display: inline-block;
+    transform: translate(80px,70px);
+    color: black;
+}
+.div-content1{
+    text-align: center;
+    margin-top:303px;
+    width:300px;
+    height:100px;
+}
+.div-img2{
+    position: absolute;
+    width:300px;
+    height:300px;
+    background-image: url(../images/cove-curved-back-side-chairs-set-of-2-201246_1445x.webp);
+    background-position: center;
+    background-size: cover;
+    z-index:1;
+}
+.div-overlay2{
+    position: absolute;
+    width:300px;
+    height:300px;
+    background-image: url(../images/CATALANO-SKU-MDCN-2P900-PELLO-01142_Retouched__82275.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index:2;
+    display: none;
+}
+.div-img2:hover + .div-overlay2{
+    display: block;
+}
+.div-content2{
+    text-align: center;
+    margin-top:303px;
+    width:300px;
+    height:100px;
+}
